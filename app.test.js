@@ -1,8 +1,10 @@
 // Test code for the first feature
+import DisplayHotel from ("./public/javascripts/displayHotels.js")
 const {app, server} = require('./app.js');
 const request = require("supertest")
 
-describe('Test Cases for Express App', () => {
+
+describe('Backend test Cases for Express App', () => {
 
   beforeAll((done) =>{
     server.on('listening', () => {
@@ -80,3 +82,10 @@ describe('Test Cases for Express App', () => {
       .expect(20);
   });
 });
+
+/*describe("Frontend test cases for booking app",() =>{
+  test("Should fetch hotel data from server", async() => {
+    DisplayHotel.
+  })
+}
+);*/
