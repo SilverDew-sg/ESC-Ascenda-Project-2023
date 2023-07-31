@@ -1,5 +1,5 @@
 // Test code for the first feature
-import DisplayHotel from ("./public/javascripts/displayHotels.js")
+//import DisplayHotel from ("./public/javascripts/displayHotels.js")
 const {app, server} = require('./app.js');
 const request = require("supertest")
 
