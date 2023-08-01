@@ -33,7 +33,7 @@ app.get('/api/disphotels', async (req, res) => {
     const partnerid = req.query.partner_id;
 
     console.log(destinationId);
-    console.log("checkin:=${} checkout guestNum")
+    //console.log("checkin:=${} checkout guestNum")
 
     const hotelsapi = `https://hotelapi.loyalty.dev/api/hotels?destination_id=${destinationId}`;
     const hotelResponse = await fetch(hotelsapi);
